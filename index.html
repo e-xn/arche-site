@@ -1,3 +1,44 @@
+Exit code: 0
+Wall time: 1 seconds
+Output:
+Exit code: 0
+Wall time: 0.6 seconds
+Total output lines: 121
+Output:
+Exit code: 0
+Wall time: 0.7 seconds
+Output:
+Exit code: 0
+Wall time: 0.7 seconds
+Output:
+Exit code: 0
+Wall time: 0.6 seconds
+Total output lines: 116
+Output:
+Exit code: 0
+Wall time: 0.7 seconds
+Output:
+Exit code: 0
+Wall time: 0.6 seconds
+Total output lines: 105
+Output:
+Exit code: 0
+Wall time: 0.7 seconds
+Total output lines: 89
+Output:
+Exit code: 0
+Wall time: 0.6 seconds
+Total output lines: 74
+Output:
+Exit code: 0
+Wall time: 0.7 seconds
+Output:
+Exit code: 0
+Wall time: 0.6 seconds
+Output:
+Exit code: 0
+Wall time: 0.7 seconds
+Output:
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>PROJECT ARCHE</title>
 <style>
@@ -21,7 +62,7 @@
 <script>(function(){var anomaly=document.getElementById('anomaly');if(anomaly){var combined=anomaly.querySelectorAll('.unit')[1];if(combined){var rows=combined.querySelectorAll('.record');combined.querySelector('.unit-head').innerHTML='CUSTODIA / CONTINUOUS OBSERVATION <span>02 FILES</span>';var v=document.createElement('div');v.className='unit';v.innerHTML='<div class="unit-head">VINCULUM / REINFORCED CONTAINMENT <span>02 FILES</span></div><div class="records"></div>';v.querySelector('.records').appendChild(rows[2]);v.querySelector('.records').appendChild(rows[3]);combined.after(v);}}document.addEventListener('click',function(e){var image=e.target.closest('.record img');if(!image)return;var record=image.closest('.record');document.getElementById('modalImage').src=image.src;document.getElementById('modalImage').alt=image.alt;document.getElementById('modalId').textContent=record.querySelector('small').textContent;document.getElementById('modalName').textContent=record.querySelector('h4').textContent;document.getElementById('modalText').textContent=record.querySelector('p').textContent;document.getElementById('modal').classList.add('open');});})();</script><script>
 var form=document.getElementById('loginForm');form.addEventListener('submit',function(e){e.preventDefault();var b=document.getElementById('accessBtn');b.disabled=true;b.textContent='VERIFYING...';form.classList.add('loading');setTimeout(function(){document.getElementById('login').style.display='none';document.getElementById('app').classList.add('open');window.scrollTo(0,0);},1200);});
 document.querySelectorAll('.folder-button').forEach(function(b){b.addEventListener('click',function(){var folder=b.parentElement;var open=folder.classList.contains('open');document.querySelectorAll('.folder').forEach(function(x){x.classList.remove('open','mobile');x.querySelector('span').textContent='+';});if(!open){folder.classList.add('open','mobile');b.querySelector('span').textContent='-';}});});
-var modal=document.getElementById('modal');document.querySelectorAll('.record img').forEach(function(img){img.addEventListener('click',function(){var rec=img.closest('.record');document.getElementById('modalImage').src=img.src;document.getElementById('modalImage').alt=img.alt;document.getElementById('modalId').textContent=rec.querySelector('small').textContent;document.getElementById(…540 tokens truncated…ment('div');s.style.cssText='position:fixed;inset:0;z-index:100003;display:grid;place-items:center;padding:20px;background:#000d';s.innerHTML='<div style="width:min(900px,100%);height:min(560px,90vh);padding:25px;border:1px solid #7ce0d6;background:#02080b;color:#e7f0ed;font:12px/1.45 monospace;overflow:hidden"><div style="color:#7ce0d6">UNRESRICTED PROJECT / DECRYPTION STREAM</div><pre style="height:90%;margin:16px 0 0;white-space:pre-wrap;overflow:hidden"></pre></div>';document.body.appendChild(s);var p=s.querySelector('pre'),i=0,l=['import { verifyIdentity, openArchive } from "@arca/core";','const session = await verifyIdentity({ subject: "NOAH", clearance: "ROOT" });','if (!session.authorized) throw new AccessDeniedError();','const registry = await openArchive("PROJECT_ARCHE");','const entities = await registry.query("SELECT * FROM anomalies WHERE status != ?", ["purged"]);','await memory.allocate({ segment: "ARCA-ROOT", protection: "sealed" });','await containment.sync({ source: "registry", mode: "read-only" });','const protocol = await decrypt("SURVIVAL_PROTOCOL", session.key);','logger.info("root session verified", { subject: session.subject });','await audit.write({ event: "unrestricted_access", actor: "NOAH" });','return protocol.execute({ directive: "PRESERVE_HUMANITY" });'],t=setInterval(function(){p.textContent+=l[i++%l.length]+'\\n';p.scrollTop=p.scrollHeight;},14);setTimeout(function(){clearInterval(t);setTimeout(function(){p.innerHTML='<div style="padding-top:150px;text-align:center;color:#7ce0d6;font:700 32px Arial,sans-serif;letter-spacing:.04em;text-shadow:0 0 18px #7ce0d688">Humanity must survive</div>';setTimeout(function(){s.remove();},1000);},1000);},3000);}
+var modal=document.getElementById('modal');document.querySelectorAll('.record img').forEach(function(img){img.addEventListener('click',function(){var rec=img.closest('.record');document.getElementById('modalImage').src=img.src;document.getElementById('modalImage').alt=img.alt;document.getElementById('modalId').textCon…429 tokens truncated…anity must survive</div>';setTimeout(function(){s.remove();},1000);},1000);},3000);}
 link.onclick=function(e){e.preventDefault();var g=document.createElement('div');g.style.cssText='position:fixed;inset:0;z-index:100003;display:grid;place-items:center;padding:20px;background:#000d';g.innerHTML='<div style="width:min(480px,100%);border:1px solid #7ce0d6;background:#061217;padding:28px;color:#e7f0ed"><div style="color:#7ce0d6;font:11px monospace">UNRESRICTED PROJECT / ACCESS REQUEST</div><label style="display:block;margin-top:22px;font:20px Arial">Who are you?<input autofocus style="display:block;width:100%;margin-top:12px;padding:14px;background:#02080b;border:1px solid #19343c;color:#e7f0ed"></label></div>';document.body.appendChild(g);var input=g.querySelector('input');input.focus();input.onkeydown=function(ev){if(ev.key!=='Enter')return;var v=input.value.trim().toLowerCase();g.remove();if(v==='noah')grant();else deny();};};
 })();
 </script><script>
@@ -61,7 +102,13 @@ link.onclick=function(e){e.preventDefault();var gate=document.createElement('div
 (function(){
 document.addEventListener('click',function(e){var record=e.target.closest('.record');if(!record)return;e.preventDefault();e.stopImmediatePropagation();var image=record.querySelector('img');if(!image)return;var old=document.getElementById('arca-detail-popup');if(old)old.remove();var pop=document.createElement('div');pop.id='arca-detail-popup';pop.style.cssText='position:fixed;inset:0;z-index:100100;display:grid;place-items:center;padding:20px;background:rgba(0,0,0,.88)';pop.innerHTML='<div style="position:relative;width:min(760px,100%);max-height:90vh;overflow:auto;background:#061217;border:1px solid #7ce0d6;color:#e7f0ed"><button type="button" style="position:absolute;right:12px;top:12px;z-index:2;width:36px;height:36px;background:#061217;color:#e7f0ed;border:1px solid #e7f0ed;font-size:20px">x</button><img style="display:block;width:100%;max-height:430px;object-fit:cover"><div style="padding:23px"><small style="color:#ddb36c;font:11px monospace"></small><h2 style="margin:8px 0;color:#7ce0d6;font-size:31px"></h2><p style="margin:0;white-space:pre-line;color:#b9c8c5;line-height:1.8"></p></div></div>';pop.querySelector('img').src=image.src;pop.querySelector('img').alt=image.alt;pop.querySelector('small').textContent=record.querySelector('small').textContent;pop.querySelector('h2').textContent=record.querySelector('h4').textContent;pop.querySelector('p').textContent=record.querySelector('p').textContent;pop.querySelector('button').onclick=function(){pop.remove();};pop.onclick=function(ev){if(ev.target===pop)pop.remove();};document.body.appendChild(pop);},true);
 })();
+</script><script>
+(function(){
+document.querySelectorAll('#retrieval .record').forEach(function(card){var image=card.querySelector('img');if(image&&image.src.toLowerCase().indexOf('/ryan.webp')>=0)card.querySelector('p').textContent='미친 개들을 조련하는 훌륭한 조련사';});
+})();
 </script></body></html>
+
+
 
 
 
